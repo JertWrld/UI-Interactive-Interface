@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    padding: 3rem 1rem;
+}
+.kit-layout {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.kit-header { margin-bottom: 3rem; }
+.kit-header p { color: #64748b; margin-top: 0.5rem; }
+.kit-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.kit-card h3 { font-size: 1.1rem; margin-bottom: 1.5rem; color: #334155; }
+
+/* Global Custom Button Kit Matrix */
+.kit-btn {
+    padding: 0.625rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+}
+.kit-btn:hover { opacity: 0.9; }
+.primary-intent { background-color: #2563eb; color: #fff; }
+.clear-intent { background-color: #e2e8f0; color: #334155; }
+.alert-intent { background-color: #ef4444; color: #fff; }
+
+/* Overlay Engine Styling structures */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+.overlay.hidden { display: none; }
+.overlay-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+}
+.overlay-box h4 { margin-bottom: 0.75rem; font-size: 1.2rem; }
+.overlay-box p { color: #64748b; font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.5; }
+.overlay-actions { display: flex; justify-content: flex-end; gap: 0.75rem; }
+
+/* Form Field validation UI */
+.input-block { margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.input-block label { font-size: 0.85rem; font-weight: 600; color: #475569; }
+.input-block input {
+    padding: 0.625rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    font-size: 0.95rem;
+}
+.input-block input:focus { border-color: #2563eb; }
+.error-msg { color: #ef4444; font-size: 0.8rem; font-weight: 500; }
+.error-msg.hidden { display: none; }
